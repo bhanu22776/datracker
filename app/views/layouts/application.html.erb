@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= content_for?(:title) ? yield(:title) : "Ananth Labs" %></title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= favicon_link_tag "/assets/favicon.png" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <img src="/assets/logo1.png">
+            </li>
+            <li class="toggle-topbar menu-icon"><a><span>menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <ul class="left">
+              <li class="divider"></li>
+              <li><h3 style="font-size:1.6875rem;font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;"><%= link_to "Home", home_demo_path %></h3></li>
+              <li class="divider"></li>
+              <li><h3 style="font-size:1.6875rem;font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;"><%= link_to "About Us", home_aboutus_path %></h3></li>
+              <li class="divider"></li>
+              <li><h3 style="font-size:1.6875rem;font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;"><%= link_to "Services" , home_services_path %></h3></li>
+              <li class="divider"></li>
+              <li><h3 style="font-size:1.6875rem;font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;"><%= link_to "Portfolio", home_portfolio_path %></h3></li>
+              <li class="divider"></li>
+              <li><h3 style="font-size:1.6875rem;font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;"><%= link_to "Jobs" , home_job_path %></h3></li>
+              <li class="divider"></li>
+              <li><h3 style="font-size:1.6875rem;font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;"><%= link_to "Team" , home_team_path %></h3></li>
+              <li class="divider"></li>
+              <li><h3 style="font-size:1.6875rem;font-family:Open Sans,Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;"><%= link_to "Contact Us" , home_contactus_path %></h3></li>
+            </ul>
+            <ul class="right">
+              <li class="divider"></li>
+              <li>
+                <h3>
+                  <a href="https://twitter.com/ananthlabs" target="_blank" ><img src="/assets/twitter.png" 
+                  width="25" height="25">@ananthlabs</a>
+                </h3>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="row"> 
+        <!-- Side Bar -->
+        <div class="large-4 small-12 columns">
+          <img src="/assets/logo.jpg">
+          <div class="panel radius">
+            <h3>Clients</h3>
+            <img src="/assets/hcl.png" width="100px" height="100px">
+            <img src="/assets/salasarlogo.png" width="50px" height="50px">
+            <img src="/assets/mjlogo.png" width="50px" height="50px">
+            <h5 class="subheader" style="font-family:bold;">Hello
+            </h5>
+          </div>
+          <a href="#">
+          <div class="panel callout radius">
+            <h6>99  items in your cart</h6>
+          </div>
+          </a>
+        </div> 
+        <!-- End Side Bar -->
+        <div class="large-8 columns">
+          <%= yield %>
+        </div>  
+        <!-- Footer -->
+        <footer class="row">
+          <div class="large-12 columns"><hr />
+            <div class="row">
+              <div class="large-6 columns">
+                <p>© Ananth Labs 2014.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer -->
+      </div>
+    </div>
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
+
