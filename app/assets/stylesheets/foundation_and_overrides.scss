@@ -928,8 +928,8 @@
 
 // Background color for the top bar
 
- $topbar-bg-color: #fff;
- $topbar-bg: $topbar-bg-color;
+	$topbar-bg-color: #fff;
+	$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -956,7 +956,9 @@
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg-hover: #fff  ;
+
+	$topbar-link-bg-hover: #fff  ;
+
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: darken($primary-color, 5%);
 // $topbar-link-font-family: $body-font-family;
@@ -976,13 +978,13 @@ $topbar-link-bg-hover: #fff  ;
 
 
 
- $topbar-menu-link-color: #272727;
+	$topbar-menu-link-color: #272727;
 
- $topbar-menu: topbar-menu-link-color;
+	$topbar-menu: topbar-menu-link-color;
 
- $topbar-menu-icon-color: #272727;
+	$topbar-menu-icon-color: #272727;
 
- $topbar-menu: topbar-menu-icon-color;
+	$topbar-menu: topbar-menu-icon-color;
 
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
